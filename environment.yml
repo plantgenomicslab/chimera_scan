@@ -1,0 +1,22 @@
+# chimera_scan conda/micromamba environment
+#
+# Create with:
+#   conda env create -f environment.yml
+#   # or
+#   micromamba create -f environment.yml
+#
+# Activate with:
+#   conda activate chimera_scan
+#   # or
+#   micromamba activate chimera_scan
+
+name: chimera_scan
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.11
+  - pandas>=2.0
+  - biopython>=1.80
+  - mmseqs2
